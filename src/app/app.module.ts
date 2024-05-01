@@ -12,7 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { HomeComponent } from './public/pages/home/home.component';
+import { HomeContentComponent } from "./public/pages/home-content/home-content.component";
 import { HelpCenterComponent } from './public/pages/help-center/help-center.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import { ProductComponent } from './public/pages/product/product.component';
@@ -33,12 +33,13 @@ import { MatCardTitle } from "@angular/material/card";
 import { HttpClientModule } from '@angular/common/http';
 import { NotificationsCardComponent } from './notifications/components/card/card.component';
 import { ReportCardComponent } from "./reports/components/card/card.component";
+import { ProductsComponent} from "./product/components/products/products.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    HomeComponent,
+    HomeContentComponent,
     HelpCenterComponent,
     PageNotFoundComponent,
     ProductComponent,
@@ -48,7 +49,8 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     NotificationsPanelComponent,
     NotificationsCardComponent,
     ReportCardComponent,
-    ReportsPanelComponent
+    ReportsPanelComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
