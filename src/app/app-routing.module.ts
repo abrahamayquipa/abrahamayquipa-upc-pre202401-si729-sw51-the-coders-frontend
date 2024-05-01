@@ -10,6 +10,9 @@ import { SettingsComponent } from "./public/pages/settings/settings.component";
 import { ShoppingCartComponent} from "./public/pages/shopping-cart/shopping-cart.component";
 import { ReportsPanelComponent} from "./public/pages/reports-panel/reports-panel.component";
 import { NotificationsPanelComponent} from "./public/pages/notifications-panel/notifications-panel.component";
+import { LoginComponent } from "./public/pages/login/login.component";
+import { SignUpComponent } from "./public/pages/sign-up/sign-up.component";
+import { ResetPasswordComponent } from "./public/pages/reset-password/reset-password.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,6 +23,10 @@ const routes: Routes = [
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: 'reports', component: ReportsPanelComponent },
   { path: 'notifications', component: NotificationsPanelComponent },
+  { path: "login", component: LoginComponent },
+  { path: "sign-up", component: SignUpComponent },
+  { path: "reset-password", component: ResetPasswordComponent },
+  { path: "**", component: PageNotFoundComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

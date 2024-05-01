@@ -21,10 +21,21 @@ import { SettingsComponent } from './public/pages/settings/settings.component';
 import { ShoppingCartComponent } from './public/pages/shopping-cart/shopping-cart.component';
 import { ReportsPanelComponent } from './public/pages/reports-panel/reports-panel.component';
 
+import { LoginFormComponent } from "./public/components/login/login-form/login-form.component";
+import { LoginComponent } from "./public/pages/login/login.component";
+import { SignUpComponent } from "./public/pages/sign-up/sign-up.component";
+import { ResetPasswordComponent } from "./public/pages/reset-password/reset-password.component";
+import { SignUpFormComponent } from "./public/components/sign-up/sign-up-form/sign-up-form.component";
+import { ResetPasswordFormComponent } from "./public/components/reset-password/reset-password-form/reset-password-form.component";
+
 import { MatExpansionPanel} from "@angular/material/expansion";
 import { MatExpansionPanelHeader} from "@angular/material/expansion";
 import { MatExpansionPanelTitle} from "@angular/material/expansion";
 import { MatExpansionPanelDescription} from "@angular/material/expansion";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { NotificationsPanelComponent } from './public/pages/notifications-panel/notifications-panel.component';
 import { MatCard } from "@angular/material/card";
@@ -48,7 +59,13 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     NotificationsPanelComponent,
     NotificationsCardComponent,
     ReportCardComponent,
-    ReportsPanelComponent
+    ReportsPanelComponent,
+    LoginFormComponent,
+    LoginComponent,
+    SignUpComponent,
+    ResetPasswordComponent,
+    SignUpFormComponent,
+    ResetPasswordFormComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +75,11 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     MatSidenavModule,
     MatIconModule,
     MatButtonModule,
+    MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatExpansionPanel,
     MatExpansionPanelTitle,
