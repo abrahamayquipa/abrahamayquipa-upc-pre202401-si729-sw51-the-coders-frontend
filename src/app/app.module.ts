@@ -21,6 +21,12 @@ import { SettingsComponent } from './public/pages/settings/settings.component';
 import { ShoppingCartComponent } from './public/pages/shopping-cart/shopping-cart.component';
 import { ReportsPanelComponent } from './public/pages/reports-panel/reports-panel.component';
 
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+
 import { MatExpansionPanel} from "@angular/material/expansion";
 import { MatExpansionPanelHeader} from "@angular/material/expansion";
 import { MatExpansionPanelTitle} from "@angular/material/expansion";
@@ -33,6 +39,9 @@ import { MatCardTitle } from "@angular/material/card";
 import { HttpClientModule } from '@angular/common/http';
 import { NotificationsCardComponent } from './notifications/components/card/card.component';
 import { ReportCardComponent } from "./reports/components/card/card.component";
+
+import { CardSettingsComponent } from './public/components/settings/card-settings/card-settings.component';
+import { FormSettingsComponent } from './public/components/settings/form-settings/form-settings.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +57,9 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     NotificationsPanelComponent,
     NotificationsCardComponent,
     ReportCardComponent,
-    ReportsPanelComponent
+    ReportsPanelComponent,
+    CardSettingsComponent,
+    FormSettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +74,11 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     MatExpansionPanelTitle,
     MatExpansionPanelHeader,
     MatExpansionPanelDescription,
+    MatButtonToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatCardContent,
     MatCard,
     MatCardTitle,
