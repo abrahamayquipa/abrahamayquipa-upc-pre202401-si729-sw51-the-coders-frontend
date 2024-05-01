@@ -33,6 +33,10 @@ import { MatCardTitle } from "@angular/material/card";
 import { HttpClientModule } from '@angular/common/http';
 import { NotificationsCardComponent } from './notifications/components/card/card.component';
 import { ReportCardComponent } from "./reports/components/card/card.component";
+import {OrderTableComponent} from './orders/components/table/table.component';
+import { OrdersComponent } from './public/pages/orders/orders.component';
+import {MatTable, MatTableModule} from "@angular/material/table";
+import {CdkCellDef, CdkFooterRowDef, CdkHeaderCellDef, CdkHeaderRowDef, CdkRowDef, CdkTable} from "@angular/cdk/table";
 
 @NgModule({
   declarations: [
@@ -48,7 +52,9 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     NotificationsPanelComponent,
     NotificationsCardComponent,
     ReportCardComponent,
-    ReportsPanelComponent
+    ReportsPanelComponent,
+    OrderTableComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
@@ -66,8 +72,16 @@ import { ReportCardComponent } from "./reports/components/card/card.component";
     MatCardContent,
     MatCard,
     MatCardTitle,
-    HttpClientModule
-],
+    HttpClientModule,
+    MatTable,
+    MatTableModule,
+    CdkTable,
+    CdkHeaderCellDef,
+    CdkCellDef,
+    CdkHeaderRowDef,
+    CdkRowDef,
+    CdkFooterRowDef
+  ],
   providers: [
     provideAnimationsAsync()
   ],

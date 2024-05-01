@@ -10,6 +10,7 @@ import { SettingsComponent } from "./public/pages/settings/settings.component";
 import { ShoppingCartComponent} from "./public/pages/shopping-cart/shopping-cart.component";
 import { ReportsPanelComponent} from "./public/pages/reports-panel/reports-panel.component";
 import { NotificationsPanelComponent} from "./public/pages/notifications-panel/notifications-panel.component";
+import {OrdersComponent} from "./public/pages/orders/orders.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'shopping-cart', component: ShoppingCartComponent },
   { path: 'reports', component: ReportsPanelComponent },
   { path: 'notifications', component: NotificationsPanelComponent },
+  { path: 'orders', component: OrdersComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
