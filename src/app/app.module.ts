@@ -37,6 +37,13 @@ import {OrderTableComponent} from './orders/components/table/table.component';
 import { OrdersComponent } from './public/pages/orders/orders.component';
 import {MatTable, MatTableModule} from "@angular/material/table";
 import {CdkCellDef, CdkFooterRowDef, CdkHeaderCellDef, CdkHeaderRowDef, CdkRowDef, CdkTable} from "@angular/cdk/table";
+import { MatDialogModule} from "@angular/material/dialog";
+import {OrdersObservationComponent} from "./public/components/orders-observation/orders-observation.component";
+import {MatFormField, MatFormFieldModule, MatLabel} from "@angular/material/form-field";
+import {FormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {provideNativeDateAdapter} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -54,7 +61,9 @@ import {CdkCellDef, CdkFooterRowDef, CdkHeaderCellDef, CdkHeaderRowDef, CdkRowDe
     ReportCardComponent,
     ReportsPanelComponent,
     OrderTableComponent,
-    OrdersComponent
+    OrdersComponent,
+    OrdersObservationComponent
+
   ],
   imports: [
     BrowserModule,
@@ -80,10 +89,18 @@ import {CdkCellDef, CdkFooterRowDef, CdkHeaderCellDef, CdkHeaderRowDef, CdkRowDe
     CdkCellDef,
     CdkHeaderRowDef,
     CdkRowDef,
-    CdkFooterRowDef
+    CdkFooterRowDef,
+    MatDialogModule,
+    MatFormField,
+    FormsModule,
+    MatLabel,
+    MatInputModule,
+    MatFormFieldModule,
+    MatDatepickerModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+provideNativeDateAdapter()
   ],
   bootstrap: [AppComponent]
 })
