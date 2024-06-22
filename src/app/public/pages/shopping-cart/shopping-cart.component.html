@@ -8,13 +8,11 @@
     <div class="column">
       <h1>Payment Method</h1>
 
-      <p>Please enter your payment method</p>
       <form class="payment-form">
 
         <div class="bg-color">
           <div class="row">
             <div class="column">
-              <mat-checkbox class="example-margin">Credit Card</mat-checkbox>
             </div>
             <div class="column">
               <img src="assets/images/visa.png"  class="visa-img  img-right" alt="visa image" />
@@ -44,25 +42,15 @@
             </mat-form-field>
           </div>
         </div>
-        <div class="bg-color">
 
-          <div class="row">
-            <div class="column">
-              <mat-checkbox class="example-margin ">Paypal</mat-checkbox>
-            </div>
-            <div class="column">
-              <img src="assets/images/paypal.png"  alt="paypal image" class="paypal-img img-right" />
-            </div>
-          </div>
-        </div>
         <div>
-          <h1> Confirmation</h1>
-          <p> We are getting to the end. Just few clicks and your retail is ready</p>
+          <h1 style="margin: 10px 10px !important"> Confirmation</h1>
+          <p style="margin: 10px 10px !important"> We are getting to the end. Just few clicks and your retail is ready</p>
           <mat-checkbox class="chk-agree-1 bg-color" >I agree with sending an Marketing and newsletter emails. No spam, promissed!</mat-checkbox>
           <mat-checkbox class="chk-agree-2 bg-color" (click)="showDataSafe()">I agree with our terms and conditions and privacy policy.</mat-checkbox>
 
         </div>
-        <button mat-fab extended color="primary" >
+        <button mat-fab extended style="margin: 10px 10px !important"color="primary" >
           PAY NOW
         </button>
         <div *ngIf="divdatasafe" class="data-safe">
